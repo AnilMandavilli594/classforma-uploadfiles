@@ -5,6 +5,7 @@ const fs = require('fs');
 var cors = require('cors');
 
 app.use(cors())
+const PORT = process.env.PORT || 8000;
 
 app.use(express.static(__dirname + '/publicsa'));
 
@@ -39,9 +40,9 @@ app.post('/upload-new', upload.array('doc'), (req, res) => {
 });
 
 
-app.listen(8000, function() {
+app.listen(PORT, function() {
 
-    console.log('App running on port 8000');
+    console.log(`App running on port ${PORT}`);
 
 });
 
