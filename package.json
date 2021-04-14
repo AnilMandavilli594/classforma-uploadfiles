@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start-dev": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
-    "build": "yarn --cwd=./file-upload build",
-    "start": "yarn --cwd=./file-upload start & node backend/server.js"
+    "build": "npm --cwd=./file-upload build",
+    "start": "npm --cwd=./file-upload start & node backend/server.js"
   },
   "author": "",
   "license": "ISC",
